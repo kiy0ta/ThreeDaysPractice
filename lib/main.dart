@@ -49,13 +49,22 @@ class _MyHomePageState extends State<MyHomePage> {
             leading: Icon(Icons.key),
             title: Text('Amazon'),
           ),
+          Divider(
+            height: 0,
+          ),
           ListTile(
             leading: Icon(Icons.key),
             title: Text('楽天証券'),
           ),
+          Divider(
+            height: 0,
+          ),
           ListTile(
             leading: Icon(Icons.key),
             title: Text('Twitter'),
+          ),
+          Divider(
+            height: 0,
           ),
         ],
       ),
