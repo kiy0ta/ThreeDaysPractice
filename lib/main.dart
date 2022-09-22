@@ -43,19 +43,21 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: const Text('ThreeDaysPractice'),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
-        ),
+      body: ListView(
+        children: const [
+          ListTile(
+            leading: Icon(Icons.key),
+            title: Text('Amazon'),
+          ),
+          ListTile(
+            leading: Icon(Icons.key),
+            title: Text('楽天証券'),
+          ),
+          ListTile(
+            leading: Icon(Icons.key),
+            title: Text('Twitter'),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
